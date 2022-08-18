@@ -10,10 +10,10 @@ where extract(year from hire_date)=1986;
 --List the manager of each department with the following information: 
 --department number, department name, the manager's employee number, last name, first name.
 select d.dept_no, dept_name, e.emp_no, last_name, first_name
-from employees as e join dept_manager as m on
-e.emp_no = m.emp_no
-join departments d on
-m.dept_no = d.dept_no;
+from employees as e join dept_manager as m 
+on e.emp_no = m.emp_no
+join departments d 
+on m.dept_no = d.dept_no;
 
 --List the department of each employee with the following information: 
 --employee number, last name, first name, and department name.
