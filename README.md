@@ -13,7 +13,7 @@ Below is the schema I created in Quick Database Diagrams for the employee databa
 The exercise required us to write SQL queries to retrieve data from our database. [Queries.sql](queries.sql) is the file that contains my queries, with comments referring to the instructions.
 
 ### Analysis
-I used SQLALchemy to connect to my PostgreSQL database in a Jupyter Notebook in order to perform some basic analyses. I made a histogram of employee salaries using a basic query of the salaries table.
+I used SQLAlchemy to connect to my PostgreSQL database in a Jupyter Notebook in order to perform some basic analyses. I made a histogram of employee salaries using a basic query of the salaries table.
 ![salary histogram](salary_distribution.jpg) 
 
 I also made a bar chart of average salaries by job title. I queried the necessary tables into dataframes and performed the rest of the analysis using Python/Pandas. I joined the dataframes together and then calculated the average salary for each job title. Finally I graphed the results with Matplotlib:
